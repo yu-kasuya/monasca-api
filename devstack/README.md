@@ -18,7 +18,7 @@ To run Monasca in DevStack, do the following three steps.
 2. Add the following to the DevStack local.conf file in the root of the devstack directory. You may
    need to create the local.conf if it does not already exist.
 
-'''
+```
 # BEGIN DEVSTACK LOCAL.CONF CONTENTS
 
 [[local|localrc]]
@@ -53,7 +53,7 @@ MONASCA_METRICS_DB=${MONASCA_METRICS_DB:-influxdb}
 enable_plugin monasca-api git://git.openstack.org/openstack/monasca-api
 
 # END DEVSTACK LOCAL.CONF CONTENTS
-'''
+```
 
 3.   Run './stack.sh' from the root of the devstack directory.
 
